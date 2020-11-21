@@ -1,3 +1,6 @@
 DOMAIN-KEYWORD,facebook
 DOMAIN-KEYWORD,fbcdn
 DOMAIN-KEYWORD,twitter
+DOMAIN-KEYWORD,twimg
+USER-AGENT,Twitter*
+USER-AGENT, mediaserverd*
