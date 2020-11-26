@@ -1,0 +1,10 @@
+# 直连规则
+
+DOMAIN-KEYWORD,apple
+DOMAIN-KEYWORD,itunes
+DOMAIN-KEYWORD,testflight
+DOMAIN-KEYWORD,51zhaoyou
+DOMAIN-SUFFIX,api.wolong.tv
+DOMAIN-SUFFIX,api.tgmmvip.com
+DOMAIN-SUFFIX,tg.lanfanyun.top
+DOMAIN,apapia-history.manmanbuy.com
