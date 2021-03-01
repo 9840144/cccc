@@ -1,13 +1,3 @@
-[Rule]
-DOMAIN-SUFFIX, amemv.com, DIRECT
-DOMAIN-SUFFIX, byteimg.com, DIRECT
-DOMAIN-SUFFIX, dig.bdurl.net, DIRECT
-DOMAIN-SUFFIX, ibytedtos.com, REJECT
-DOMAIN-SUFFIX, ipstatp.com, REJECT
-
-[URL Rewrite]
-^https?:\/\/(.*)\.amemv\.com\/aweme\/v2\/(follow\/)?feed\/ https://$1.amemv.com/aweme/v1/$2feed/ header
-
 [Script]
 #-京东比价 (api.m.jd.com)
 http-response ^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig) script-path=https://raw.githubusercontent.com/yichahucha/surge/master/jd_price.js, requires-body=true, timeout=10, tag=京东比价
