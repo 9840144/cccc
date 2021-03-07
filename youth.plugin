@@ -4,19 +4,44 @@
 # 中青看点极速版自动阅读
 #cron "20 00 * * *" script-path=https://raw.githubusercontent.com/songyangzz/QuantumultX/master/YOUTH_READ.js, timeout=1800, enabled=true, tag=中青看点极速版自动阅读
 # 中青获取body
-http-request https:\/\/ios\.baertt\.com\/v5\/article\/complete.json script-path=https://raw.githubusercontent.com/songyangzz/QuantumultX/master/zqgetbody.js,requires-body=true, enabled=true, tag=中青获取body
+#http-request https:\/\/ios\.baertt\.com\/v5\/article\/complete.json script-path=https://raw.githubusercontent.com/songyangzz/QuantumultX/master/zqgetbody.js,requires-body=true, enabled=true, tag=中青获取body
 
 # 中青看点极速版
-http-request https:\/\/\w+\.youth\.cn\/TaskCenter\/(sign|getSign) script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js, requires-body=true, enabled=true, tag=中青看点极速版
+#http-request https:\/\/\w+\.youth\.cn\/TaskCenter\/(sign|getSign) script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js, requires-body=true, enabled=true, tag=中青看点极速版
 
 # 中青看点极速版
-http-request https?:\/\/ios\.baertt\.com\/v5\/article\/complete script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js, requires-body=true, enabled=true, tag=中青看点极速版
+#http-request https?:\/\/ios\.baertt\.com\/v5\/article\/complete script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js, requires-body=true, enabled=true, tag=中青看点极速版
 
 # 中青看点极速版
-http-request https:\/\/ios\.baertt\.com\/v5\/article\/red_packet script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js, requires-body=true, enabled=true, tag=中青看点极速版
+#http-request https:\/\/ios\.baertt\.com\/v5\/article\/red_packet script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js, requires-body=true, enabled=true, tag=中青看点极速版
 
 # 中青看点极速版
-http-request https:\/\/ios\.baertt\.com\/v5\/user\/app_stay\.json script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js, requires-body=true, enabled=true, tag=中青看点极速版
+#http-request https:\/\/ios\.baertt\.com\/v5\/user\/app_stay\.json script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js, requires-body=true, enabled=true, tag=中青看点极速版
+
+#上面禁用
+# 中青看点极速版
+https:\/\/kd\.youth\.cn\/WebApi\/NewTaskIos\/getTaskList script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js, tag=中青看点极速版
+
+http-request https:\/\/ios\.baertt\.com\/v5\/article\/info\/get\.json script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js, requires-body=true, tag=中青看点极速版
+
+http-request https:\/\/ios\.baertt\.com\/v5\/\w+\/withdraw\d?\.json script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js, requires-body=true, tag=中青看点极速版
+
+http-request https:\/\/ios\.baertt\.com\/v5\/user\/stay\.json script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js, requires-body=true, tag=中青看点极速版
+
+http-request https:\/\/ios\.baertt\.com\/v5\/Nameless\/adlickstart\.json script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth_gain.js, requires-body=true, tag=中青看点看看赚
+
+http-request https:\/\/ios\.baertt\.com\/v5\/task\/browse_start\.json script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth_gain.js, requires-body=true, tag=中青看点浏览赚
+
+# 中青看点自动阅读
+http-request https:\/\/ios\.baertt\.com\/v5\/user\/stay\.json script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/Youth_Read.js, requires-body=true, tag=中青看点阅读
+
+http-request https:\/\/ios\.baertt\.com\/v5\/article\/info\/get\.json script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/Youth_Read.js, tag=中青看点阅读
+
+# 聚看点
+http-request https:\/\/www\.xiaodouzhuan\.cn\/jkd\/newMobileMenu\/infoMe\.action script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/jukan.js, requires-body=true, tag=聚看点
+
+# 快手视频
+http-request https:\/\/nebula\.kuaishou\.com\/rest\/n\/nebula\/activity\/earn\/overview script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/kuaishou.js, tag=快手极速版
 
 [MITM]
-hostname = ios.baertt.com, kd.youth.cn
+hostname = ios.baertt.com, kd.youth.cn，www.xiaodouzhuan.cn,nebula.kuaishou.com,activity.m.kuaishou.com
